@@ -1,5 +1,5 @@
 ﻿if (!A_IsAdmin)
-	Run *RunAs %A_ScriptFullPath%
+    Run *RunAs %A_ScriptFullPath%
 FileEncoding UTF-8-RAW
 OnExit("ExitFunc")
 
@@ -57,17 +57,17 @@ return
 #SingleInstance Force
 
 GuiClose:
-	Gui Hide
+    Gui Hide
 return
 
 GuiSize:
-	if (A_EventInfo==1)
-		return
-	GuiControl Move,Record,% "w" A_GuiWidth-30 "h" A_GuiHeight-18
+    if (A_EventInfo==1)
+        return
+    GuiControl Move,Record,% "w" A_GuiWidth-30 "h" A_GuiHeight-18
 return
 
 Record:
-	Gui %RecordUI%:Show,,Record
+    Gui %RecordUI%:Show,,Record
 return
 
 
@@ -81,7 +81,7 @@ return
 
 
 Exit:
-	ExitApp
+    ExitApp
     
 ExitFunc()
 {
